@@ -7,7 +7,7 @@ sbt assembly
 ```
 to create fat jar
 
-## Usage
+## Usage examples
 Accepts one argument: a textual representation of an [ISO 8583 message](https://en.wikipedia.org/wiki/ISO_8583).
 
 ```bash
