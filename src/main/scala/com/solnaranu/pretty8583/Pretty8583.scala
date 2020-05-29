@@ -59,7 +59,7 @@ object Pretty8583 {
   implicit class IsoMessageOps(val isoMessage: IsoMessage) extends AnyVal {
     def getOptionalValue(field: Int): Option[String] = Option(isoMessage.getObjectValue[String](field))
 
-    def primaryBitmap: String = isoMessage.debugString.slice(5, 21)
+    def primaryBitmap: String = isoMessage.debugString.slice(4, 20)
 
     def secondaryBitmap: Option[String] = if (primaryBitmap.head > '7') Some(isoMessage.debugString.slice(20, 36)) else None
 
