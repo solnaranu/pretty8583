@@ -54,6 +54,7 @@ object Pretty8583 {
     100 -> "Receiving institution ID",
     102 -> "Account ID 1",
     103 -> "Account ID 2",
+    127 -> "Mini statement details"
   ).toMap
 
   implicit class IsoMessageOps(val isoMessage: IsoMessage) extends AnyVal {
@@ -65,7 +66,7 @@ object Pretty8583 {
 
     def pretty: String = {
       val fields = for {
-        field <- 2 to 103
+        field <- 2 to 128
         name <- fieldNames.get(field)
         value <- getOptionalValue(field)
       } yield {
