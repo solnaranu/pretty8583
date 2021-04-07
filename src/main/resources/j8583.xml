@@ -50,6 +50,10 @@
         <field num="100" type="LLVAR"/>
         <field num="102" type="LLVAR"/>
         <field num="103" type="LLVAR"/>
+        <field num="113" type="LLLVAR"/>
+        <field num="114" type="LLLVAR"/>
+        <field num="115" type="LLLVAR"/>
+        <field num="116" type="LLLVAR"/>
         <field num="127" type="LLLVAR"/>
     </parse>
 
