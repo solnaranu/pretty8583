@@ -54,6 +54,10 @@ object Pretty8583 {
     100 -> "Receiving institution ID",
     102 -> "Account ID 1",
     103 -> "Account ID 2",
+    113 -> "Customer Name",
+    114 -> "Customer Address",
+    115 -> "Customer Other",
+    116 -> "Customer Accounts",
     127 -> "Mini statement details"
   ).toMap
 
